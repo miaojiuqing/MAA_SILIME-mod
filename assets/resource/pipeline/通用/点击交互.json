@@ -1,0 +1,29 @@
+{
+    "OK": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "繁中/通用/OK.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 250
+    },
+    "下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "繁中/通用/下一步1.png",
+                    "繁中/通用/下一步2.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 250
+    },
+    "YES": {},
+    "叉叉": {}
+}

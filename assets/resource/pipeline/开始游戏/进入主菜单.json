@@ -1,0 +1,37 @@
+{
+    "发包启动游戏": {
+        "action": "StartApp",
+        "package": "com.bandainamcoent.tensuramrkww"
+    },
+    "发包关闭游戏": {
+        "action": "StopApp",
+        "package": "com.bandainamcoent.tensuramrkww"
+    },
+    "点击进入游戏": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1146,
+                    621,
+                    64,
+                    57
+                ],
+                "template": [
+                    "繁中/开始游戏/点击进入游戏.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    338,
+                    370,
+                    591,
+                    324
+                ]
+            }
+        }
+    }
+}

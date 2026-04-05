@@ -1,0 +1,21 @@
+{
+    "黑屏计数-2.5秒": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "count": 800000,
+                "upper": [
+                    0,
+                    0,
+                    0
+                ],
+                "lower": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 2500
+    }
+}

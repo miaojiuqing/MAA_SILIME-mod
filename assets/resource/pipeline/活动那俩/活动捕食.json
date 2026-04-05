@@ -1,0 +1,53 @@
+{
+    "活动三次捕食-已进入捕食评价界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    84,
+                    525,
+                    92,
+                    114
+                ],
+                "template": [
+                    "繁中/活动那俩/捕食战/捕食评价.png"
+                ]
+            }
+        }
+    },
+    "活动三次捕食-捕食评价界面-下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    857,
+                    500,
+                    320,
+                    146
+                ],
+                "template": [
+                    "繁中/通用/下一步1.png"
+                ]
+            }
+        },
+        "repeat": 5,
+        "action": "Click"
+    },
+    "活动三次捕食-战斗结束界面-下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    996,
+                    579,
+                    244,
+                    127
+                ],
+                "template": [
+                    "繁中/通用/下一步2.png"
+                ]
+            }
+        },
+        "action": "Click"
+    }
+}
