@@ -4,7 +4,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "繁中/通用/OK.png"
+                    "繁中/通用/交互按钮/OK.png"
                 ]
             }
         },
@@ -16,8 +16,8 @@
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "繁中/通用/下一步1.png",
-                    "繁中/通用/下一步2.png"
+                    "繁中/通用/交互按钮/下一步1.png",
+                    "繁中/通用/交互按钮/下一步2.png"
                 ]
             }
         },
@@ -25,5 +25,24 @@
         "post_delay": 250
     },
     "YES": {},
-    "叉叉": {}
+    "叉叉": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    641,
+                    0,
+                    639,
+                    389
+                ],
+                "template": [
+                    "繁中/通用/交互按钮/叉叉.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1500
+    }
 }

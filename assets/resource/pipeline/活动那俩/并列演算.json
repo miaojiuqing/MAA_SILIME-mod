@@ -1,1 +1,183 @@
-{}
+{
+    "并列演算-任务开始层": {
+        "next": [
+            "并列演算-总任务层",
+            "[JumpBack]启动游戏并进入菜单"
+        ]
+    },
+    "并列演算-总任务层": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    103,
+                    342,
+                    103,
+                    97
+                ],
+                "template": [
+                    "繁中/开始游戏/正处于主界面.png"
+                ]
+            }
+        },
+        "next": [
+            "并列演算-已处于期间限定",
+            "[JumpBack]点击主线和培养",
+            "[JumpBack]黑屏计数-2.5秒",
+            "[JumpBack]YES",
+            "[JumpBack]叉叉"
+        ]
+    },
+    "并列演算-已处于期间限定": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    997,
+                    49,
+                    275,
+                    123
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主线&培育/点击切换到主线和培育.png"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]点击未选中的故事",
+            "并列演算-已处于入口选择界面-双入口模版",
+            "[JumpBack]并列演算-点击故事处入口-双入口模版",
+            "[JumpBack]并列演算-滑动寻找大入口"
+        ]
+    },
+    "并列演算-滑动寻找大入口": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    771,
+                    582,
+                    117,
+                    122
+                ],
+                "template": [
+                    "繁中/通用/入口点击/期间限定/已选中/故事.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    935,
+                    552,
+                    16,
+                    16
+                ],
+                "end": [
+                    663,
+                    552,
+                    18,
+                    14
+                ],
+                "duration": 2000
+            }
+        }
+    },
+    "并列演算-点击故事处入口-双入口模版": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    368,
+                    130,
+                    885,
+                    454
+                ],
+                "template": [
+                    "繁中/活动那俩/故事处活动入口.png"
+                ]
+            }
+        }
+    },
+    "并列演算-已处于入口选择界面-双入口模版": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    782,
+                    95,
+                    286,
+                    178
+                ],
+                "template": [
+                    "繁中/活动那俩/已进入入口选择界面.png"
+                ]
+            }
+        },
+        "next": [
+            "并列演算-已处于关卡列表",
+            "[JumpBack]并列演算-点击小入口-双入口模版"
+        ]
+    },
+    "并列演算-点击小入口-双入口模版": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    899,
+                    92,
+                    347,
+                    297
+                ],
+                "template": [
+                    "繁中/活动那俩/并列演算/小入口.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 1500
+    },
+    "并列演算-已处于关卡列表": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    729,
+                    196,
+                    73,
+                    191
+                ],
+                "template": [
+                    "繁中/活动那俩/并列演算/已进入关卡列表.png"
+                ]
+            }
+        },
+        "next": [
+            "并列演算-本日并列次数已达上限"
+        ]
+    },
+    "并列演算-本日并列次数已达上限": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    796,
+                    169,
+                    250,
+                    72
+                ],
+                "template": [
+                    "繁中/活动那俩/并列演算/次数已达上限.png"
+                ]
+            }
+        },
+        "next": [
+            "成功进入主菜单",
+            "[JumpBack]叉叉",
+            // "[JumpBack]YES",
+            "[JumpBack]黑屏计数-2.5秒",
+            "[JumpBack]点击黑色小主菜单"
+        ]
+    }
+}

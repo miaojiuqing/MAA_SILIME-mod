@@ -1,0 +1,20 @@
+{
+    "点击切换至主线&培育": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    997,
+                    49,
+                    275,
+                    123
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主线&培育/点击切换到主线和培育.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 1500
+    }
+}
