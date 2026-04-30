@@ -1,8 +1,12 @@
 {
     "启动游戏并进入菜单": {
         "next": [
+            "[JumpBack]发包启动游戏",
             "成功进入主菜单",
+            "[JumpBack]点击绿色大菜单",
             "[JumpBack]OK",
+            "[JumpBack]叉叉",
+            "[JumpBack]黑屏计数-2.5秒",
             "[JumpBack]乱点一下"
             // "[JumpBack]Yes"
         ]
@@ -17,6 +21,7 @@
         ]
     },
     "发包启动游戏": {
+        "max_hit": 1,
         "action": "StartApp",
         "package": "com.bandainamcoent.tensuramrkww"
     },
@@ -62,5 +67,23 @@
                 ]
             }
         }
+    },
+    "点击绿色大菜单": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1109,
+                    16,
+                    100,
+                    94
+                ],
+                "template": [
+                    "繁中/通用/主菜单们/绿色大菜单.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 2000
     }
 }
