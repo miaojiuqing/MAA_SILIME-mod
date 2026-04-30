@@ -3,6 +3,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "roi": [
+                    22,
+                    175,
+                    1258,
+                    545
+                ],
                 "template": [
                     "繁中/通用/交互按钮/OK.png"
                 ]
