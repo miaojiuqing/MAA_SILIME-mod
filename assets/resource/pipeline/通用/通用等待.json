@@ -17,5 +17,22 @@
             }
         },
         "post_delay": 2500
+    },
+    "通用-可处理范围加载等待": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    303,
+                    0,
+                    128,
+                    89
+                ],
+                "template": [
+                    "繁中/通用/大概是加载中ing.png"
+                ]
+            }
+        },
+        "post_delay": 1000
     }
 }
