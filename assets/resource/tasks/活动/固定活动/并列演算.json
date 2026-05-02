@@ -3,7 +3,10 @@
         {
             "name": "并列演算",
             "entry": "并列演算-任务开始层",
-            "description": "请自行解锁,固定点击MAX并列最大次数"
+            "description": "请自行解锁,固定点击MAX并列最大次数",
+            "option": [
+                "活动并列演算-编队选择"
+            ]
         }
     ],
     "option": {
