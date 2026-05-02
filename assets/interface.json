@@ -50,6 +50,7 @@
         "resource/tasks/启动游戏.json",
         "resource/tasks/日常/锻造升级.json",
         "resource/tasks/活动/固定活动/并列演算.json",
+        "resource/tasks/日常/奖励领取/邮箱.json"
     ],
     "preset": []
 }
