@@ -47,6 +47,7 @@
     ],
     "task": [],
     "import": [
+        "resource/tasks/启动游戏.json",
         "resource/tasks/活动/固定活动/并列演算.json",
     ],
     "preset": []
