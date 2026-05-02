@@ -1,0 +1,24 @@
+{
+    "skip": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1165,
+                    67,
+                    67,
+                    54
+                ],
+                "template": [
+                    "繁中/通用/战斗/skip.png"
+                ]
+            }
+        },
+        "repeat": 3,
+        "action": "Click",
+        "post_delay": 0,
+        "pre_delay": 0,
+        "repeat_delay": 0
+    }
+}
