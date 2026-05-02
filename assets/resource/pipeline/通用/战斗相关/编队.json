@@ -1,0 +1,23 @@
+{
+    "通用-编队切换-点击切换编队": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1127,
+                    298,
+                    128,
+                    128
+                ],
+                // "roi": [17, 305, 129, 114],
+                "template": [
+                    "繁中/通用/战斗/切换编队-右.png"
+                    // "繁中/通用/战斗/切换编队-左.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 1500
+    }
+}
