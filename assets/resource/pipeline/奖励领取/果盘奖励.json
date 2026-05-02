@@ -104,7 +104,13 @@
                 ]
             }
         },
-        "next": []
+        "post_delay": 500,
+        "next": [
+            "果盘奖励领取-无可领取奖励",
+            "果盘奖励领取-奖励领取弹窗",
+            "[JumpBack]果盘奖励领取-点击可领取果盘",
+            "[JumpBack]空任务"
+        ]
     },
     "果盘奖励领取-点击可领取果盘": {
         "recognition": {
@@ -141,5 +147,60 @@
                 ]
             }
         }
+    },
+    "果盘奖励领取-奖励领取弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    515,
+                    555,
+                    257,
+                    117
+                ],
+                "template": [
+                    "繁中/通用/交互按钮/OK_2.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "next": [
+            "果盘奖励领取-已进入果盘界面",
+            "果盘奖励领取-奖励领取弹窗"
+        ]
+    },
+    "果盘奖励领取-无可领取奖励": {
+        "inverse": true,
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    182,
+                    30,
+                    917,
+                    51
+                ],
+                "upper": [
+                    247,
+                    47,
+                    23
+                ],
+                "lower": [
+                    247,
+                    39,
+                    14
+                ],
+                "connected": true,
+                "count": 250
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "果盘奖励领取完毕"
+        },
+        "next": [
+            "成功进入主菜单",
+            "[JumpBack]点击黑色小主菜单",
+            "[JumpBack]左上角返回"
+        ]
     }
 }

@@ -62,5 +62,22 @@
             "type": "Click"
         },
         "post_delay": 1500
+    },
+    "左上角返回": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    162,
+                    108
+                ],
+                "template": [
+                    "繁中/通用/交互按钮/返回.png"
+                ]
+            }
+        },
+        "action": "Click"
     }
 }

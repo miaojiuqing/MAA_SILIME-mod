@@ -1,4 +1,5 @@
 {
+    "空任务": {},
     "黑屏计数-2.5秒": {
         "recognition": {
             "type": "ColorMatch",
