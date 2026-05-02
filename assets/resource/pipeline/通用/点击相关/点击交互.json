@@ -31,7 +31,18 @@
         "action": "Click",
         "post_delay": 250
     },
-    "YES": {},
+    "YES": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "繁中/通用/交互按钮/YES.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 1500
+    },
     "叉叉": {
         "recognition": {
             "type": "TemplateMatch",
