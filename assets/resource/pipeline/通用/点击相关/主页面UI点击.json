@@ -18,5 +18,25 @@
         "action": "Click",
         "post_delay": 1000,
         "pre_delay": 200
+    },
+    "点击期间限定": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1011,
+                    253,
+                    197,
+                    94
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主菜单/期间限定.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "post_delay": 1000,
+        "pre_delay": 200
     }
 }
