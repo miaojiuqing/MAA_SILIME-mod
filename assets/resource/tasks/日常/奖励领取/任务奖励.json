@@ -21,10 +21,12 @@
                     "pipeline_override": {
                         "任务奖励-期间限定-无可领取奖励": {
                             "next": [
+                                "[JumpBack]任务奖励-通用-奖励确认弹窗",
                                 "果盘奖励领取-当前处于任务界面",
                                 "[JumpBack]OK",
                                 "[JumpBack]YES",
-                                "[JumpBack]叉叉"
+                                "[JumpBack]叉叉",
+                                "[JumpBack]果盘奖励领取-点击从任务界面进入果盘界面"
                             ]
                         }
                     }

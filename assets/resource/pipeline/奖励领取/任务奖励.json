@@ -70,10 +70,10 @@
             "type": "TemplateMatch",
             "param": {
                 "roi": [
-                    54,
-                    424,
-                    106,
-                    105
+                    1027,
+                    93,
+                    202,
+                    70
                 ],
                 "template": [
                     "繁中/奖励领取/任务奖励/已进入领取界面.png"
@@ -575,11 +575,10 @@
             "Node.Recognition.Succeeded": "期间限定奖励领取完毕"
         },
         "next": [
-            "成功进入主菜单",
-            "[JumpBack]叉叉",
-            "[JumpBack]黑屏计数-2.5秒",
-            "[JumpBack]点击黑色小主菜单",
-            "[JumpBack]通用-可处理范围加载等待"
+            "果盘奖励领取-当前处于任务界面",
+            "[JumpBack]OK",
+            "[JumpBack]YES",
+            "[JumpBack]叉叉"
         ]
     }
 }
