@@ -38,5 +38,22 @@
         "action": "Click",
         "post_delay": 1000,
         "pre_delay": 200
+    },
+    "点击进入城镇": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    970,
+                    574,
+                    102,
+                    96
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主菜单/首页.png"
+                ]
+            }
+        },
+        "action": "Click"
     }
 }
