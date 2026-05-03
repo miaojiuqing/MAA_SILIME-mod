@@ -29,7 +29,7 @@
                 "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
             }
         }
-    ],
+    ], //发版试验
     "resource": [
         {
             "name": "繁中",
