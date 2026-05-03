@@ -6,6 +6,7 @@
             "description": "请自行解锁,固定点击MAX并列最大次数",
             "option": [
                 "活动并列演算-编队选择",
+                "活动并列演算-自动编队",
                 "活动并列演算-编队切换方式",
                 "通用-有未完成的并列演算"
             ]
@@ -126,6 +127,22 @@
                 }
             ],
             "default_case": "第七编队"
+        },
+        "活动并列演算-自动编队": {
+            "type": "switch",
+            "label": "自动编队",
+            "description": "切换到所选编队后,自动根据最高收集效果进行编队",
+            "default_case": "No",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {}
+                }
+            ]
         },
         "活动并列演算-编队切换方式": { //考虑更改为通用节点，不过optios可以像tasks一样弄文件夹吗
             "type": "select",
