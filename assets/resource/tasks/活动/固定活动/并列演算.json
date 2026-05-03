@@ -136,11 +136,42 @@
             "cases": [
                 {
                     "name": "Yes",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "并列演算-已成功切换至所选编队": {
+                            "target": [
+                                77,
+                                613,
+                                187,
+                                54
+                            ],
+                            "post_delay": 1500,
+                            "next": [
+                                "并列演算-自动编队-已进入自动编队界面",
+                                "并列演算-已成功切换至所选编队"
+                            ]
+                        }
+                    }
                 },
                 {
                     "name": "No",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "并列演算-已成功切换至所选编队": {
+                            "target": [
+                                814,
+                                626,
+                                147,
+                                33
+                            ],
+                            "next": [
+                                "[JumpBack]并列演算-上次并列演算结果",
+                                "并列演算-已打开并列演算界面",
+                                "[JumpBack]OK",
+                                "[JumpBack]下一步",
+                                "[JumpBack]通用-演算中断-检查到中断弹窗",
+                                "并列演算-已成功切换至所选编队"
+                            ]
+                        }
+                    }
                 }
             ]
         },
