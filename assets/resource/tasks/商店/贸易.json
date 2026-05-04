@@ -8,7 +8,8 @@
             "description": "想买什么但选项没有的话提issue或者进群说,不考虑贸易票据不够的情况,这玩意能不够那你是真挥霍",
             "option": [
                 "商店-贸易-商品选择-心之书-简易蓝",
-                "商店-贸易-商品选择-心之书-简易绿"
+                "商店-贸易-商品选择-心之书-简易绿",
+                "商店-贸易-商品选择-武器材料-至高魔羽"
             ]
         }
     ],
@@ -55,6 +56,30 @@
                     "name": "No",
                     "pipeline_override": {
                         "贸易-商品-心之书-简易绿": {
+                            "enabled": false
+                        }
+                    }
+                }
+            ]
+        },
+        "商店-贸易-商品选择-武器材料-至高魔羽": {
+            "type": "switch",
+            "label": "武器材料-至高魔羽",
+            "icon": "./resource/base/image/繁中/商店/贸易/图标/武器材料/至高魔羽.png",
+            "default_case": "Yes",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "贸易-商品-武器材料-至高魔羽": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "贸易-商品-武器材料-至高魔羽": {
                             "enabled": false
                         }
                     }
