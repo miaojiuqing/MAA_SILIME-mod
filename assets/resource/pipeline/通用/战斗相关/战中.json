@@ -39,5 +39,22 @@
         },
         "action": "Click",
         "post_delay": 500
+    },
+    "通用-战后角色升级界面的下一步": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    975,
+                    585,
+                    286,
+                    125
+                ],
+                "template": [
+                    "繁中/通用/交互按钮/下一步2.png"
+                ]
+            }
+        },
+        "action": "Click"
     }
 }
