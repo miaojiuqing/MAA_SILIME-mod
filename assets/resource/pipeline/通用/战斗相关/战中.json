@@ -19,7 +19,7 @@
         "action": "Click",
         "post_delay": 0,
         "pre_delay": 0,
-        "repeat_delay": 0
+        "repeat_delay": 150
     },
     "通用-出战队伍有并列演算处理": {
         "recognition": {
