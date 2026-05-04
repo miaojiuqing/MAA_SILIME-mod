@@ -64,7 +64,8 @@
         "resource/tasks/日常/奖励领取/果盘奖励领取.json",
         "resource/tasks/日常/奖励领取/邮箱.json",
         "resource/tasks/日常/英杰盃.json", //饼
-        "resource/tasks/单独运行工具/盖德监工.json" //饼
+        "resource/tasks/单独运行工具/盖德监工.json", //饼
+        "resource/tasks/单独运行工具/单本复刷.json" //饼
     ],
     "preset": []
 }
