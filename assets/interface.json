@@ -53,7 +53,7 @@
         "resource/tasks/日常/设施支援申请.json", //做一半
         "resource/tasks/日常/城镇对话.json", //做一半
         "resource/tasks/日常/捕食战.json",
-        "resource/tasks/商店/贸易.json",
+        "resource/tasks/商店/贸易.json", //待补充商品
         "resource/tasks/琐事/泡温泉.json",
         "resource/tasks/琐事/联盟.json",
         "resource/tasks/琐事/设施产出收取.json", //饼
