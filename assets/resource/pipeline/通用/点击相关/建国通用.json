@@ -1,0 +1,78 @@
+{
+    "通用-建国-支援了我的弹窗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    575,
+                    51,
+                    132,
+                    93
+                ],
+                "template": [
+                    "繁中/通用/特殊情况特殊处理/建国/支援我的弹窗.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    536,
+                    596,
+                    210,
+                    56
+                ]
+            }
+        },
+        "post_delay": 500
+    },
+    "通用-建国-兴建": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1096,
+                    537,
+                    114,
+                    106
+                ],
+                "template": [
+                    "繁中/通用/特殊情况特殊处理/建国/兴建.png"
+                ]
+            }
+        },
+        "action": "Click"
+    },
+    "通用-建国-发展目标达成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    392,
+                    43,
+                    330,
+                    95
+                ],
+                "template": [
+                    "繁中/通用/特殊情况特殊处理/建国/弹窗处理/发展目标达成.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "发展目标达成,有钻领喽"
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    538,
+                    585,
+                    202,
+                    63
+                ]
+            }
+        },
+        "post_delay": 1000
+    }
+}

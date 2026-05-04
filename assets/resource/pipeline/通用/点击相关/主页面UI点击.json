@@ -55,5 +55,22 @@
             }
         },
         "action": "Click"
+    },
+    "点击进入建筑": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1057,
+                    398,
+                    104,
+                    88
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主菜单/建国.png"
+                ]
+            }
+        },
+        "action": "Click"
     }
 }

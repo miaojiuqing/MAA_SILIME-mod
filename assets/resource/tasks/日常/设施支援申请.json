@@ -1,0 +1,60 @@
+{
+    "task": [
+        {
+            "name": "日常-设施支援",
+            "label": "设施支援",
+            "entry": "设施支援-任务开始层",
+            "description": "可以顺便把支援请求收了",
+            "option": [
+                "日常-设施支援-是否顺便收取支援申请奖励"
+            ]
+        }
+    ],
+    "option": {
+        "日常-设施支援-是否顺便收取支援申请奖励": {
+            "type": "switch",
+            "label": "是否顺便收取支援申请奖励",
+            "description": "就是点进“支援”的时候左边那个",
+            "default_case": "Yes",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "设施支援-无来自盟友的支援请求": {
+                            "recognition": {
+                                "type": "ColorMatch",
+                                "param": {
+                                    "roi": [
+                                        138,
+                                        584,
+                                        268,
+                                        72
+                                    ],
+                                    "upper": [
+                                        57,
+                                        57,
+                                        59
+                                    ],
+                                    "lower": [
+                                        15,
+                                        14,
+                                        16
+                                    ],
+                                    "count": 8000
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "设施支援-无来自盟友的支援请求": {
+                            "recognition": "DirectHit"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
