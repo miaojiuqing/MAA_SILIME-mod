@@ -17,6 +17,252 @@
                 ]
             }
         },
-        "next": []
+        "next": [
+            "联盟每日-已进入联盟",
+            "[JumpBack]联盟每日-点击进入联盟",
+            "[JumpBack]黑屏计数-2.5秒",
+            "[JumpBack]通用-可处理范围加载等待"
+        ]
+    },
+    "联盟每日-点击进入联盟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    214,
+                    584,
+                    102,
+                    86
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主菜单/盟主联合.png"
+                ]
+            }
+        },
+        "action": "Click"
+    },
+    "联盟每日-已进入联盟": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    457,
+                    535,
+                    80,
+                    77
+                ],
+                "template": [
+                    "繁中/日常/联盟/已进入联盟.png"
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]联盟每日-正处于报酬领取界面-退出去",
+            "联盟每日-有可领取的盟友赞助奖励",
+            "联盟每日-无可领取的盟友赞助奖励"
+        ]
+    },
+    "联盟每日-有可领取的盟友赞助奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    986,
+                    431,
+                    189,
+                    101
+                ],
+                "template": [
+                    "繁中/日常/联盟/有可领取的盟友赞助奖励.png"
+                ]
+            }
+        },
+        "action": "Click",
+        "pre_delay": 200,
+        "next": [
+            "联盟每日-奖励获取成功",
+            "联盟每日-有可领取的盟友赞助奖励"
+        ]
+    },
+    "联盟每日-奖励获取成功": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    447,
+                    26,
+                    175,
+                    113
+                ],
+                "template": [
+                    "繁中/日常/联盟/奖励确认弹窗.png"
+                ]
+            }
+        },
+        "pre_delay": 300,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    540,
+                    590,
+                    200,
+                    53
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "得到了! 来自盟友的神秘奖励"
+        },
+        "next": [
+            "[JumpBack]联盟每日-正处于报酬领取界面-退出去",
+            "联盟每日-已进入联盟",
+            "联盟每日-奖励获取成功"
+        ]
+    },
+    "联盟每日-无可领取的盟友赞助奖励": {
+        "inverse": true,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    986,
+                    431,
+                    189,
+                    101
+                ],
+                "template": [
+                    "繁中/日常/联盟/有可领取的盟友赞助奖励.png"
+                ]
+            }
+        },
+        "pre_delay": 200,
+        "next": [
+            "联盟每日-魔晶报酬get",
+            "成功进入主菜单",
+            "[JumpBack]点击黑色小主菜单",
+            "[JumpBack]通用-可处理范围加载等待"
+        ]
+    },
+    "联盟每日-魔晶报酬get": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    495,
+                    12,
+                    120,
+                    76
+                ],
+                "template": [
+                    "繁中/日常/联盟/魔晶get.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "联盟升级了! 有可领取的魔晶报酬哦~"
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    521,
+                    9,
+                    68,
+                    29
+                ]
+            }
+        },
+        "next": [
+            "联盟每日-魔晶报酬-已进入报酬领取界面",
+            "联盟每日-魔晶报酬get"
+        ]
+    },
+    "联盟每日-魔晶报酬-已进入报酬领取界面": { //顺便点击领取
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    777,
+                    123,
+                    176,
+                    84
+                ],
+                "template": [
+                    "繁中/日常/联盟/报酬领取界面.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    251,
+                    573,
+                    209,
+                    63
+                ]
+            }
+        },
+        "next": [
+            "联盟每日-奖励获取成功",
+            "联盟每日-魔晶报酬-已进入报酬领取界面",
+            "[JumpBack]通用-可处理范围加载等待"
+        ]
+    },
+    "联盟每日-正处于报酬领取界面-退出去": { //点叉叉
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    777,
+                    123,
+                    176,
+                    84
+                ],
+                "template": [
+                    "繁中/日常/联盟/报酬领取界面.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1162,
+                    66,
+                    43,
+                    14
+                ]
+            }
+        }
     }
+    // "联盟每日-联合情报奖励检查": {
+    //     "recognition": {
+    //         "type": "TemplateMatch",
+    //         "param": {
+    //             "roi": [
+    //                 256,
+    //                 590,
+    //                 71,
+    //                 71
+    //             ],
+    //             "template": [
+    //                 "繁中/日常/联盟/红色感叹号.png"
+    //             ]
+    //         }
+    //     },
+    //     "action": {
+    //         "type": "Click",
+    //         "param": {
+    //             "target_offset": [
+    //                 0,
+    //                 0,
+    //                 125,
+    //                 30
+    //             ]
+    //         }
+    //     }
+    // }
 }
