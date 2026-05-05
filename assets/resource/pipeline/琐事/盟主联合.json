@@ -22,11 +22,35 @@
             }
         },
         "next": [
+            "[JumpBack]联盟每日-skip",
             "联盟每日-已进入联盟",
             "[JumpBack]联盟每日-点击进入联盟",
             "[JumpBack]黑屏计数-2.5秒",
-            "[JumpBack]通用-可处理范围加载等待"
+            "[JumpBack]通用-可处理范围加载等待",
+            "[JumpBack]叉叉"
         ]
+    },
+    "联盟每日-skip": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "green_mask": true,
+                "roi": [
+                    1165,
+                    17,
+                    65,
+                    55
+                ],
+                "template": [
+                    "繁中/通用/战斗/skip.png"
+                ]
+            }
+        },
+        "repeat": 3,
+        "action": "Click",
+        "post_delay": 0,
+        "pre_delay": 0,
+        "repeat_delay": 150
     },
     "联盟每日-点击进入联盟": {
         "recognition": {
