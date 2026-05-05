@@ -50,7 +50,7 @@
         "resource/tasks/启动游戏.json",
         "resource/tasks/日常/锻造升级.json",
         "resource/tasks/日常/日常送礼.json",
-        "resource/tasks/日常/设施支援申请.json", //做一半
+        "resource/tasks/日常/设施支援申请.json",
         "resource/tasks/日常/城镇对话.json", //可优化，分两阶段，第二阶段的一览检查不加点击动作专门处理特殊事件
         "resource/tasks/日常/捕食战.json",
         "resource/tasks/商店/贸易.json", //待补充商品
