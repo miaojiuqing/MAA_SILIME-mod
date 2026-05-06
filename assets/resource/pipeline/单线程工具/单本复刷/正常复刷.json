@@ -1,5 +1,20 @@
 {
+    "单本复刷-正常模式-引用层": {
+        "enabled": false,
+        "repeat_delay": 0,
+        "post_delay": 0,
+        "pre_delay": 0,
+        "next": [
+            "单本复刷-正常模式-正处于编队界面",
+            "单本复刷-正常模式-已进入战斗",
+            "单本复刷-正常模式-战斗结算",
+            "[JumpBack]空任务"
+        ]
+    },
     "单本复刷-正常模式-正处于编队界面": {
+        "repeat_delay": 0,
+        "post_delay": 0,
+        "pre_delay": 0,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -24,6 +39,68 @@
                     61
                 ]
             }
-        }
+        },
+        "next": [
+            "[JumpBack]skip",
+            "日常-城镇对话-战斗事件-已进入战斗",
+            "单本复刷-正常模式-正处于编队界面",
+            "[JumpBack]黑屏计数-0.5秒",
+            "[JumpBack]通用-可处理范围加载等待",
+            "[JumpBack]空任务"
+        ]
+    },
+    "单本复刷-正常模式-已进入战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    41,
+                    0,
+                    124,
+                    83
+                ],
+                "template": [
+                    "繁中/通用/战斗/战斗中/WAVE.png"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]skip",
+            "单本复刷-正常模式-战斗结算",
+            "单本复刷-正常模式-已进入战斗",
+            "[JumpBack]异常处理-网络连接失败-点击重试"
+        ]
+    },
+    "单本复刷-正常模式-战斗结算": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    997,
+                    585,
+                    231,
+                    120
+                ],
+                "template": [
+                    "繁中/通用/交互按钮/下一步2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    810,
+                    617,
+                    178,
+                    55
+                ]
+            }
+        },
+        "next": [
+            "单本复刷-正常模式-已进入战斗",
+            "[JumpBack]黑屏计数-0.5秒",
+            "[JumpBack]空任务"
+        ]
     }
 }

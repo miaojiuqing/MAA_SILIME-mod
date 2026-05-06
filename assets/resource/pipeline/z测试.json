@@ -1,19 +1,30 @@
 {
     "1": {
-        "recognition": {
-            "type": "TemplateMatch",
+        // "recognition": {
+        //     "type": "TemplateMatch",
+        //     "param": {
+        //         "roi": [
+        //             43,
+        //             144,
+        //             1200,
+        //             243
+        //         ],
+        //         "template": [
+        //             "繁中/通用/建国/筛选/地区/已选中/竹林.png"
+        //         ],
+        //         "method": 10001,
+        //         "threshold": 0.85
+        //     }
+        // }
+        "action": {
+            "type": "Click",
             "param": {
-                "roi": [
-                    43,
-                    144,
-                    1200,
-                    243
-                ],
-                "template": [
-                    "繁中/通用/建国/筛选/地区/已选中/竹林.png"
-                ],
-                "method": 10001,
-                "threshold": 0.85
+                "target": [
+                    1092,
+                    81,
+                    127,
+                    31
+                ]
             }
         }
     }

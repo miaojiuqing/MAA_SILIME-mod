@@ -19,6 +19,25 @@
         },
         "post_delay": 2500
     },
+    "黑屏计数-0.5秒": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "count": 800000,
+                "upper": [
+                    0,
+                    0,
+                    0
+                ],
+                "lower": [
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 500
+    },
     "通用-可处理范围加载等待": {
         "recognition": {
             "type": "TemplateMatch",
