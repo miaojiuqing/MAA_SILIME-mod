@@ -44,9 +44,77 @@
                 ]
             }
         },
-        "action": "Click",
+        "action": "DoNothing",
+        "next": [
+            "泡温泉-城镇可泡温泉检查",
+            "泡温泉-城镇不可泡温泉检查",
+            // "泡温泉-已打开双一览界面",
+            "泡温泉-已进入城镇",
+            "[JumpBack]通用-可处理范围加载等待"
+        ]
+    },
+    "泡温泉-城镇不可泡温泉检查": {
+        "inverse": true,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1130,
+                    513,
+                    87,
+                    88
+                ],
+                "template": [
+                    "繁中/琐事/泡温泉/城镇检查.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1139,
+                    40,
+                    41,
+                    46
+                ]
+            }
+        },
+        "next": [
+            "成功进入主菜单",
+            "[JumpBack]点击绿色大菜单",
+            "[JumpBack]通用-可处理范围加载等待"
+        ]
+    },
+    "泡温泉-城镇可泡温泉检查": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1130,
+                    513,
+                    87,
+                    88
+                ],
+                "template": [
+                    "繁中/琐事/泡温泉/城镇检查.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1153,
+                    625,
+                    43,
+                    41
+                ]
+            }
+        },
         "next": [
             "泡温泉-已打开双一览界面",
+            "泡温泉-城镇可泡温泉检查",
             "泡温泉-已进入城镇",
             "[JumpBack]通用-可处理范围加载等待"
         ]
