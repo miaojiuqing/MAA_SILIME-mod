@@ -133,6 +133,7 @@
         "英杰盃-挑战模式": {
             "type": "select",
             "label": "挑战模式",
+            "default_case": "英杰盃-一般战",
             "cases": [
                 {
                     "name": "英杰盃-一般战",
@@ -222,6 +223,7 @@
                 },
                 {
                     "name": "使用英杰盃参加卷继续战斗",
+                    "description": "耗尽了的情况未考虑，待投稿",
                     "pipeline_override": {
                         "英杰盃-挑战卷已耗尽": {
                             "action": {
@@ -251,6 +253,7 @@
         "英杰盃-自动领取功绩奖励": {
             "type": "switch",
             "label": "自行领取功绩奖励",
+            "default_case": "Yes",
             "cases": [
                 {
                     "name": "Yes",
