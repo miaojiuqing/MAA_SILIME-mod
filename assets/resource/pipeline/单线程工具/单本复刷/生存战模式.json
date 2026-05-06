@@ -1,6 +1,6 @@
 {
     "单本复刷-生存战-引用层": {
-        // "enabled": false,
+        "enabled": false,
         "repeat_delay": 0,
         "post_delay": 0,
         "pre_delay": 0,
@@ -164,7 +164,9 @@
             }
         },
         "next": [
+            "[JumpBack]工具-单本复刷-体力不足处理",
             "单本复刷-生存战-已进入战斗",
+            "单本复刷-生存战-战斗结算",
             "[JumpBack]黑屏计数-0.5秒",
             "[JumpBack]空任务"
         ]

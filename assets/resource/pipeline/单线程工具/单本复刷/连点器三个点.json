@@ -1,6 +1,6 @@
 {
     "单本复刷-连点器-引用层": {
-        // "enabled": false,
+        "enabled": false,
         "repeat_delay": 0,
         "post_delay": 0,
         "pre_delay": 0,

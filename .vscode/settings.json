@@ -22,8 +22,9 @@
         },
         {
             "fileMatch": [
-                "/assets/resource/tasks/**/*.json",
-                "/install/resource/tasks/**/*.json"
+                //掌管tasks文件内容在哪里可以补全
+                "/assets/tasks/**/*.json",
+                "/install/tasks/**/*.json"
             ],
             "url": "/deps/tools/interface_import.schema.json"
         },
