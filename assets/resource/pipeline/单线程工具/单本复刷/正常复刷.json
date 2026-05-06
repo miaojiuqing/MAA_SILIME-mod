@@ -1,0 +1,29 @@
+{
+    "单本复刷-正常模式-正处于编队界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    49,
+                    590,
+                    119,
+                    100
+                ],
+                "template": [
+                    "繁中/通用/战斗/已处于编队界面.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    998,
+                    608,
+                    208,
+                    61
+                ]
+            }
+        }
+    }
+}
