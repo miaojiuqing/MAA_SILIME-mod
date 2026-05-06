@@ -139,7 +139,7 @@
     },
     "果盘奖励领取-点击可领取果盘": { //变为目的节点，等待奖励获取结算界面
         "recognition": {
-            "type": "ColorMatch",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     182,
@@ -147,18 +147,13 @@
                     917,
                     51
                 ],
-                "upper": [
-                    247,
-                    47,
-                    23
+                "template": [
+                    "繁中/奖励领取/果盘奖励/有可领取果盘.png"
                 ],
-                "lower": [
-                    247,
-                    39,
-                    14
-                ],
-                "connected": true,
-                "count": 250
+                "green_mask": true,
+                // "connected": true,
+                // "count": 250
+                "method": 10001
             }
         },
         "action": {
@@ -197,7 +192,7 @@
     "果盘奖励领取-无可领取奖励": {
         "inverse": true,
         "recognition": {
-            "type": "ColorMatch",
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     182,
@@ -205,18 +200,13 @@
                     917,
                     51
                 ],
-                "upper": [
-                    247,
-                    47,
-                    23
+                "template": [
+                    "繁中/奖励领取/果盘奖励/有可领取果盘.png"
                 ],
-                "lower": [
-                    247,
-                    39,
-                    14
-                ],
-                "connected": true,
-                "count": 250
+                "green_mask": true,
+                // "connected": true,
+                // "count": 250
+                "method": 10001
             }
         },
         "focus": {
