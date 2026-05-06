@@ -7,7 +7,7 @@
             "description": "不会有人打不过吧(",
             "option": [
                 "奖励关-魔王龙道-编队选择",
-                "奖励关-魔王龙道-编队切换方式"
+                "通用-编队切换方式"
             ]
         }
     ],
@@ -126,57 +126,6 @@
                 }
             ],
             "default_case": "不切换"
-        },
-        "奖励关-魔王龙道-编队切换方式": { //考虑更改为通用节点，不过optios可以像tasks一样弄文件夹吗
-            "type": "select",
-            "label": "编队切换方式",
-            "default_case": "点击切换至下一个",
-            "cases": [
-                {
-                    "name": "点击切换至下一个",
-                    "description": "点右边",
-                    "pipeline_override": {
-                        "通用-编队切换-点击切换编队": {
-                            "recognition": {
-                                "type": "TemplateMatch",
-                                "param": {
-                                    "roi": [
-                                        1127,
-                                        298,
-                                        128,
-                                        128
-                                    ],
-                                    "template": [
-                                        "繁中/通用/战斗/切换编队-右.png"
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    "name": "点击切换至上一个",
-                    "description": "点左边",
-                    "pipeline_override": {
-                        "通用-编队切换-点击切换编队": {
-                            "recognition": {
-                                "type": "TemplateMatch",
-                                "param": {
-                                    "roi": [
-                                        17,
-                                        305,
-                                        129,
-                                        114
-                                    ],
-                                    "template": [
-                                        "繁中/通用/战斗/切换编队-左.png"
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            ]
         }
     }
 }

@@ -16,6 +16,9 @@
         //         "threshold": 0.85
         //     }
         // }
+        "focus": {
+            "Node.Recognition.Succeeded": "吃了一次药"
+        },
         "action": {
             "type": "Click",
             "param": {
