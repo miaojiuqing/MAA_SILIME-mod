@@ -357,6 +357,10 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "method": 10001,
+                "threshold": [
+                    0.85
+                ],
                 "roi": [
                     59,
                     129,
