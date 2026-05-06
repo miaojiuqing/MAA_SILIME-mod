@@ -15,6 +15,7 @@
         "琐事-泡温泉-城镇检查": {
             "type": "switch",
             "label": "进入城镇时检查还能不能泡温泉",
+            "default_case": "Yes",
             "description": "若无泡温泉标志则直接跳过任务",
             "cases": [
                 {
