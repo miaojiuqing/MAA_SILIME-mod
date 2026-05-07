@@ -4,6 +4,7 @@
     "interface_version": 2,
     "name": "辛西娅小助手重构版",
     "description": "这是一个使用 MaaFramework 创建的新项目。",
+    "icon": "./resource/image/logo.png",
     "contact": "QQ群: 123456789",
     "license": "MIT",
     "welcome": "首次使用！欢迎使用 MAA!",
