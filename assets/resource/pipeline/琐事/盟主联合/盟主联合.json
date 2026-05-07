@@ -177,6 +177,7 @@
             "[JumpBack]通用-可处理范围加载等待"
         ]
     },
+    "联盟每日-水群": {}, //饼
     "联盟每日-魔晶报酬get": {
         "recognition": {
             "type": "TemplateMatch",
