@@ -25,7 +25,9 @@
     "梦幻镜魔境-点击入口": {
         "recognition": {
             "type": "TemplateMatch",
-            "param": {}
+            "param": {
+                "template": []
+            }
         }
     }
 }
