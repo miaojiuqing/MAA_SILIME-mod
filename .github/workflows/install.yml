@@ -133,15 +133,14 @@ jobs:
             echo "Skipping copy MFA for Android."
           fi
 
-          # ✅ 新增：自动复制 tasks 文件夹
-          echo "Copying tasks folder..."
-          mkdir -p install/assets
-          cp -r assets/tasks install/assets/
-
           cd tools/
           python -m pip install -r ./requirements.txt
           python ./install.py ${{ needs.meta.outputs.tag }} ${{ matrix.os }} ${{ matrix.arch }}
           cd ..
+
+          # ✅ 修复：移到 install.py 之后，复制到包根目录
+          echo "Copying tasks folder..."
+          cp -r assets/tasks install/
 
       - uses: actions/upload-artifact@v4
         with:
