@@ -138,10 +138,6 @@ jobs:
           python ./install.py ${{ needs.meta.outputs.tag }} ${{ matrix.os }} ${{ matrix.arch }}
           cd ..
 
-          # ✅ 修复：移到 install.py 之后，复制到包根目录
-          echo "Copying tasks folder..."
-          cp -r assets/tasks install/
-
       - uses: actions/upload-artifact@v4
         with:
           name: MaaSLIMEIM-${{ matrix.os }}-${{ matrix.arch }}
