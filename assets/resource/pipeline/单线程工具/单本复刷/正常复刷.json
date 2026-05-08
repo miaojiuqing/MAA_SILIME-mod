@@ -99,11 +99,41 @@
             }
         },
         "next": [
+            "[JumpBack]单本复刷-正常模式-再战处体力不足",
             "[JumpBack]工具-单本复刷-体力不足处理",
             "单本复刷-正常模式-已进入战斗",
             "单本复刷-正常模式-战斗结算",
             "[JumpBack]黑屏计数-0.5秒",
             "[JumpBack]空任务"
         ]
+    },
+    "单本复刷-正常模式-再战处体力不足": {
+        "enabled": true,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    842,
+                    596,
+                    112,
+                    66
+                ],
+                "template": [
+                    "繁中/单线程工具/单本复刷/体力不足/再战处体力不足.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    810,
+                    617,
+                    178,
+                    55
+                ]
+            }
+        },
+        "post_delay": 1000
     }
 }
