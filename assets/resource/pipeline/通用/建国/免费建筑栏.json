@@ -15,6 +15,9 @@
                 ]
             }
         },
+        "focus": {
+            "Node.Recognition.Succeeded": "有可以白嫖的建筑栏"
+        },
         "action": {
             "type": "Click",
             "param": {
@@ -64,6 +67,9 @@
                     "繁中/通用/建国/免费建筑栏/解锁确认.png"
                 ]
             }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "白嫖成功~"
         },
         "action": {
             "type": "Click",
