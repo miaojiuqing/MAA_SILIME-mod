@@ -113,5 +113,32 @@
         "action": {
             "type": "Click"
         }
+    },
+    "通用-编队-体力消耗确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    531,
+                    269,
+                    186,
+                    103
+                ],
+                "template": [
+                    "繁中/通用/战斗/弹窗/体力消耗确认.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    670,
+                    431,
+                    212,
+                    72
+                ]
+            }
+        }
     }
 }
