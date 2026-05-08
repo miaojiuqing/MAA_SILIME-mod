@@ -3,11 +3,11 @@
     // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
     "name": "辛西娅小助手重构版",
-    "description": "这是一个使用 MaaFramework 创建的新项目。",
+    "description": "更强,更快,逻辑更加清晰的辛西娅小助手",
     "icon": "./resource/image/logo.png",
-    "contact": "QQ群: 123456789",
+    "contact": "QQ群: 855795905",
     "license": "MIT",
-    "welcome": "首次使用！欢迎使用 MAA!",
+    "welcome": "欢迎使用辛西娅小助手~",
     // 填写项目地址和版本号可实现自动更新功能
     "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
     "version": "1.0.0",
