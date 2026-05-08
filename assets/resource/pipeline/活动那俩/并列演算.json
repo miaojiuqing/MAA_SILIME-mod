@@ -25,7 +25,7 @@
             "[JumpBack]点击期间限定",
             "[JumpBack]黑屏计数-2.5秒",
             "[JumpBack]点击切换至期间限定",
-            // "[JumpBack]YES",
+            "[JumpBack]YES",
             "[JumpBack]叉叉",
             "[JumpBack]通用-可处理范围加载等待"
         ]
@@ -48,12 +48,12 @@
         "next": [
             "[JumpBack]点击未选中的故事",
             "并列演算-已处于入口选择界面-双入口模版",
-            "[JumpBack]并列演算-点击故事处入口-双入口模版",
-            "[JumpBack]并列演算-滑动寻找大入口",
+            "[JumpBack]双活通用-点击故事处入口-双入口模版",
+            "[JumpBack]双活通用-滑动寻找大入口",
             "[JumpBack]通用-可处理范围加载等待"
         ]
     },
-    "并列演算-滑动寻找大入口": {
+    "双活通用-滑动寻找大入口": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -87,7 +87,7 @@
             }
         }
     },
-    "并列演算-点击故事处入口-双入口模版": {
+    "双活通用-点击故事处入口-双入口模版": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
