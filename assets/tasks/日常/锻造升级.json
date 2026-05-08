@@ -11,6 +11,7 @@
             "group": [
                 "日常"
             ],
+            "default_check": true,
             "pipeline_override": {
                 "异常处理-日期更新": {
                     "next": [

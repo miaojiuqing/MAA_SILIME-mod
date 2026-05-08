@@ -3,6 +3,10 @@
         {
             "name": "进入游戏",
             "entry": "启动游戏并进入菜单",
+            "group": [
+                "日常"
+            ],
+            "default_check": true,
             "description": "启动游戏并打开主菜单",
             "pipeline_override": {
                 "启动游戏并进入菜单": {
