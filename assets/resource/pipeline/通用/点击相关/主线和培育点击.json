@@ -33,5 +33,22 @@
             }
         },
         "action": "Click"
+    },
+    "主线&培育-点击未选中的故事": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    552,
+                    580,
+                    128,
+                    124
+                ],
+                "template": [
+                    "繁中/通用/入口点击/主线&培育/未选中/故事.png"
+                ]
+            }
+        },
+        "action": "Click"
     }
 }

@@ -1,22 +1,4 @@
 {
-    "列表刷关-主线模式-检查当前章节是否为所选": {
-        "enabled": true,
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    131,
-                    443,
-                    162,
-                    106
-                ],
-                "expected": [
-                    "第31章",
-                    "正義與信仰"
-                ]
-            }
-        }
-    },
     "列表刷关-主线模式-章节难度检查": {
         // "enabled": false,
         "recognition": {
@@ -366,7 +348,10 @@
         },
         "focus": {
             "Node.Recognition.Succeeded": "已回到主线章节选择界面"
-        }
+        },
+        "next": [
+            "章节选择-任务开始层"
+        ]
     },
     "列表刷关-主线模式-点击切换难度为-上级": {
         "recognition": {
