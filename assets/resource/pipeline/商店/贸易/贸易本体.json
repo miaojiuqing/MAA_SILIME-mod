@@ -239,6 +239,7 @@
             }
         },
         "action": "Click",
+        "pre_delay": 500,
         "post_delay": 1000
     },
     "贸易-该商品已点完MAX": {
