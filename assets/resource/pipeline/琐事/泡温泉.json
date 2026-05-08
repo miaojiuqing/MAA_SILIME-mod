@@ -382,10 +382,12 @@
         },
         "next": [
             "泡温泉-收益-110体力",
+            "泡温泉-收益-90体力",
             "成功进入主菜单",
             "[JumpBack]点击绿色大菜单",
             "[JumpBack]黑屏计数-2.5秒",
-            "[JumpBack]泡温泉-过对话"
+            "[JumpBack]泡温泉-过对话",
+            "[JumpBack]OK"
         ]
     },
     "泡温泉-收益-110体力": { //待补充
@@ -405,6 +407,42 @@
         },
         "focus": {
             "Node.Recognition.Succeeded": "此次温泉收益为110体力"
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    559,
+                    449,
+                    162,
+                    48
+                ]
+            }
+        },
+        "next": [
+            "成功进入主菜单",
+            "[JumpBack]点击绿色大菜单",
+            "[JumpBack]黑屏计数-2.5秒",
+            "[JumpBack]泡温泉-过对话"
+        ]
+    },
+    "泡温泉-收益-90体力": { //待补充
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    443,
+                    302,
+                    383,
+                    94
+                ],
+                "template": [
+                    "繁中/琐事/泡温泉/收益/90.png"
+                ]
+            }
+        },
+        "focus": {
+            "Node.Recognition.Succeeded": "此次温泉收益为90体力"
         },
         "action": {
             "type": "Click",
