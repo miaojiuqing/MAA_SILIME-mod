@@ -60,6 +60,7 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
+                "green_mask": true,
                 "roi": [
                     1057,
                     398,
