@@ -3,6 +3,10 @@
         {
             "name": "日常-送礼",
             "label": "送礼物",
+            "group": [
+                "日常"
+            ],
+            "default_check": true,
             "entry": "日常送礼-总任务层",
             "description": "当前好感上限可能会卡住,忘记截屏了,等人看反馈",
             "option": [

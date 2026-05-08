@@ -4,6 +4,10 @@
             "name": "日常-捕食战",
             "label": "捕食战",
             "entry": "日常捕食-任务开始层",
+            "group": [
+                "日常"
+            ],
+            "default_check": true,
             "description": "不会有人没解锁上级捕食战吧(",
             "option": [
                 "日常捕食-自行切换至上级难度",

@@ -3,6 +3,10 @@
         {
             "name": "日常活动捕食",
             "entry": "日常活动捕食-任务开始层",
+            "default_check": true,
+            "group": [
+                "日常"
+            ],
             "description": "请自行解锁,又不是没有关卡列表自动刷给你用.jpg",
             "option": [
                 "活动日常活动捕食-编队选择",

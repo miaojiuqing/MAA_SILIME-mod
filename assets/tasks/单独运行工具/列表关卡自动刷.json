@@ -5,6 +5,10 @@
             "label": "列表刷关",
             "entry": "列表刷关-任务开始层",
             "description": "目前仅支持剧情、捕食类",
+            "group": [
+                "单线程工具"
+            ],
+            "default_check": false,
             "option": [
                 "列表刷关-主线模式",
                 "通用-体力不足处理",

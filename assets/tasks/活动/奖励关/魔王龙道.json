@@ -3,6 +3,10 @@
         {
             "name": "活动-奖励关-魔王龙道",
             "label": "魔王龙道",
+            "default_check": true,
+            "group": [
+                "日常"
+            ],
             "entry": "奖励关-魔王龙道-任务开始层",
             "description": "不会有人打不过吧(",
             "option": [

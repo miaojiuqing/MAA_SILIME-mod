@@ -47,6 +47,32 @@
         // }
     ],
     "task": [],
+    "group": [
+        {
+            "name": "日常",
+            "default_expand": true,
+            "label": "日常",
+            "description": "至少辛西娅认为是每日必做"
+        },
+        {
+            "name": "琐事",
+            "default_expand": true,
+            "label": "琐事",
+            "description": "这些功能一般在做日常时会顺手做了"
+        },
+        {
+            "name": "奖励领取",
+            "default_expand": true,
+            "label": "奖励",
+            "description": "为什么要把奖励单独开一栏?辛西娅不知道哦"
+        },
+        {
+            "name": "单线程工具",
+            "default_expand": false,
+            "label": "工具",
+            "description": "只建议单独运行的任务"
+        }
+    ],
     "import": [
         "tasks/启动游戏.json",
         "tasks/日常/锻造升级.json",
