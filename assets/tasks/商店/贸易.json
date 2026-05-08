@@ -21,7 +21,7 @@
         "商店-贸易-商品选择-心之书-简易蓝": {
             "type": "switch",
             "label": "心之书-简历蓝",
-            "icon": "./resource/base/image/繁中/商店/贸易/图标/心之书/简易蓝.png",
+            "icon": "./resource/image/繁中/商店/贸易/图标/心之书/简易蓝.png",
             "default_case": "Yes",
             "cases": [
                 {
@@ -45,7 +45,7 @@
         "商店-贸易-商品选择-心之书-简易绿": {
             "type": "switch",
             "label": "心之书-简历绿",
-            "icon": "./resource/base/image/繁中/商店/贸易/图标/心之书/简易绿.png",
+            "icon": "./resource/image/繁中/商店/贸易/图标/心之书/简易绿.png",
             "default_case": "Yes",
             "cases": [
                 {
@@ -69,7 +69,7 @@
         "商店-贸易-商品选择-武器材料-至高魔羽": {
             "type": "switch",
             "label": "武器材料-至高魔羽",
-            "icon": "./resource/base/image/繁中/商店/贸易/图标/武器材料/至高魔羽.png",
+            "icon": "./resource/image/繁中/商店/贸易/图标/武器材料/至高魔羽.png",
             "default_case": "Yes",
             "cases": [
                 {
