@@ -6,6 +6,7 @@
             "entry": "列表刷关-任务开始层",
             "description": "目前仅支持剧情、捕食类",
             "option": [
+                "列表刷关-主线模式",
                 "通用-体力不足处理",
                 "列表刷关-战斗类编队选择",
                 "通用-编队切换方式"
@@ -14,6 +15,39 @@
     ],
     "preset": [],
     "option": {
+        "列表刷关-主线模式": {
+            "type": "switch",
+            "label": "主线模式",
+            "description": "启动后列表刷完会检查是否为上级,若不是则初->中->上的顺序挑战",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "列表刷关-当前列表已挑战完毕": {
+                            "focus": {
+                                "Node.Recognition.Succeeded": "目标所及关卡已刷完,已开启主线模式,将检查当前章节难度"
+                            }
+                        },
+                        "列表刷关-主线模式-章节难度检查": {
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "列表刷关-当前列表已挑战完毕": {
+                            "focus": {
+                                "Node.Recognition.Succeeded": "目标所及关卡已刷完"
+                            }
+                        },
+                        "列表刷关-主线模式-章节难度检查": {
+                            "enabled": false
+                        }
+                    }
+                }
+            ]
+        },
         "列表刷关-战斗类编队选择": {
             "type": "select",
             "label": "编队选择",
