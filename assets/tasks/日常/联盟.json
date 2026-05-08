@@ -53,14 +53,39 @@
         "日常-盟主联合-每日水群": {
             "label": "自动水群",
             "type": "switch",
+            "default_case": "No",
             "cases": [
                 {
                     "name": "Yes",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "联盟每日-无可领取的盟友赞助奖励": {
+                            "next": [
+                                "[JumpBack]联盟每日-累计达成奖励领取",
+                                "[JumpBack]联盟每日-正处于报酬领取界面-退出去",
+                                "联盟每日-魔晶报酬get",
+                                "联盟水群-已进入表情包选择界面",
+                                "[JumpBack]联盟水群-点击进入表情包选择界面"
+                                // "成功进入主菜单",
+                                // "[JumpBack]点击黑色小主菜单",
+                                // "[JumpBack]通用-可处理范围加载等待"
+                            ]
+                        }
+                    }
                 },
                 {
                     "name": "No",
-                    "pipeline_override": {}
+                    "pipeline_override": {
+                        "联盟每日-无可领取的盟友赞助奖励": {
+                            "next": [
+                                "[JumpBack]联盟每日-累计达成奖励领取",
+                                "[JumpBack]联盟每日-正处于报酬领取界面-退出去",
+                                "联盟每日-魔晶报酬get",
+                                "成功进入主菜单",
+                                "[JumpBack]点击黑色小主菜单",
+                                "[JumpBack]通用-可处理范围加载等待"
+                            ]
+                        }
+                    }
                 }
             ]
         }
