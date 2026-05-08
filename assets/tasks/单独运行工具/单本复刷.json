@@ -110,14 +110,93 @@
                     "pipeline_override": {
                         "单本复刷-正常模式-再战处体力不足": {
                             "enabled": true
+                        },
+                        "单本复刷-正常模式-战斗结算": {
+                            "post_delay": 500
                         }
-                    }
+                    },
+                    "option": [
+                        "工具-单本复刷-再战延迟"
+                    ]
                 },
                 {
                     "name": "No",
                     "pipeline_override": {
                         "单本复刷-正常模式-再战处体力不足": {
                             "enabled": false
+                        }
+                    }
+                }
+            ]
+        },
+        "工具-单本复刷-再战延迟": {
+            "type": "select",
+            "label": "再战延迟",
+            "default_case": "单本复刷-再战延迟-1秒",
+            "description": "每次点击再战的间隔",
+            "cases": [
+                {
+                    "name": "单本复刷-再战延迟-1秒",
+                    "label": "1秒",
+                    "pipeline_override": {
+                        "单本复刷-正常模式-再战处体力不足": {
+                            "post_delay": 500,
+                            "enabled": true
+                        },
+                        "单本复刷-正常模式-战斗结算": {
+                            "post_delay": 500
+                        }
+                    }
+                },
+                {
+                    "name": "单本复刷-再战延迟-1.5秒",
+                    "label": "1.5秒",
+                    "pipeline_override": {
+                        "单本复刷-正常模式-再战处体力不足": {
+                            "post_delay": 1000,
+                            "enabled": true
+                        },
+                        "单本复刷-正常模式-战斗结算": {
+                            "post_delay": 1000
+                        }
+                    }
+                },
+                {
+                    "name": "单本复刷-再战延迟-2秒",
+                    "label": "2秒",
+                    "pipeline_override": {
+                        "单本复刷-正常模式-再战处体力不足": {
+                            "post_delay": 1500,
+                            "enabled": true
+                        },
+                        "单本复刷-正常模式-战斗结算": {
+                            "post_delay": 1500
+                        }
+                    }
+                },
+                {
+                    "name": "单本复刷-再战延迟-2.5秒",
+                    "label": "2.5秒",
+                    "pipeline_override": {
+                        "单本复刷-正常模式-再战处体力不足": {
+                            "post_delay": 2000,
+                            "enabled": true
+                        },
+                        "单本复刷-正常模式-战斗结算": {
+                            "post_delay": 2000
+                        }
+                    }
+                },
+                {
+                    "name": "单本复刷-再战延迟-3秒",
+                    "label": "3秒",
+                    "pipeline_override": {
+                        "单本复刷-正常模式-再战处体力不足": {
+                            "post_delay": 2500,
+                            "enabled": true
+                        },
+                        "单本复刷-正常模式-战斗结算": {
+                            "post_delay": 2500
                         }
                     }
                 }
